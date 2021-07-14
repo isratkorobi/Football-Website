@@ -1,0 +1,382 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+/* Normalize */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* input:focus {
+  outline: 0 !important;
+} */
+
+img {
+  width: 100%;
+}
+
+p {
+  line-height: 26px;
+}
+
+/* Common CSS  */
+.container {
+  width: 1080px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.half-width {
+  width: 50%;
+  padding: 0 10px;
+}
+
+.half-width:first-child {
+  padding-left: 0;
+}
+
+.half-width:last-child {
+  padding-right: 0;
+}
+
+.section-title {
+  margin-bottom: 25px;
+}
+
+.heading {
+  color: #0a0826;
+  font-size: 48px;
+  line-height: 60px;
+  font-weight: 700;
+}
+
+.small-heading {
+  font-size: 35px;
+}
+
+.description {
+  color: #6c6c6c;
+  margin-top: 8px;
+}
+
+.white-color {
+  color: #ffffff;
+}
+
+/* Button */
+.button {
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #e02c6d;
+  padding: 10px 25px;
+  display: inline-block;
+  cursor: pointer;
+  margin-top: 25px;
+  transition: all 0.6s ease-in;
+}
+
+.button-icon {
+  margin-left: 8px;
+}
+
+.button:hover {
+  background-color: #1f63ac;
+}
+
+/* Banner Area */
+#banner-area {
+  background-color: #10437a;
+  color: #ffffff;
+  padding: 90px 0;
+  transition: transform 0.5s;
+}
+
+.banner-heading {
+  font-size: 65px;
+  font-weight: 700;
+  line-height: 80px;
+}
+
+.banner-image {
+  transition: transform 0.3s ease;
+}
+
+#banner-area:hover .banner-image {
+  transform: scale(0.98);
+}
+
+/* Players Area */
+#players-area {
+  padding: 70px 0;
+}
+
+.players {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.player {
+  padding: 15px;
+  box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.15);
+}
+
+.player-name {
+  color: #18191f;
+  font-size: 28px;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.player-description {
+  color: #6c6c6c;
+  margin-bottom: 15px;
+}
+
+/* Highlights Area */
+#highlights-area {
+  padding: 50px 0 100px 0;
+}
+
+/* Blog Area */
+#blog-area {
+  background-color: #f1f1f1;
+  padding: 60px 0 80px;
+}
+
+.blogs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.blog {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.blog-thumbnail {
+  width: 200px;
+  line-height: 0;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.blog-info {
+  width: calc(100% - 200px);
+  margin-left: 16px;
+}
+
+.blog-published-time {
+  font-size: 12px;
+  color: #1e1d38;
+}
+
+.blog-title {
+  font-weight: 700;
+}
+.small-heading{
+  text-align: center;
+  padding-bottom:10px;
+}
+.horizon{
+  width:25%;
+  margin:0 auto;
+  border: 2px solid rgb(71, 70, 70);
+  margin-top:1px;
+  margin-bottom:45px;
+}
+.blog-author {
+  font-size: 14px;
+}
+
+.blog-author a {
+  color: #10437a;
+  font-weight: 500;
+}
+
+/* Stats Area */
+#stats-area {
+  padding: 60px 0 80px 0;
+  background-color: #10437a;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.stats-box {
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #2061a7;
+}
+
+.stats-label {
+  color: #dde8ff;
+  font-size: 15px;
+}
+
+.stats-value {
+  color: #ffffff;
+  font-size: 30px;
+}
+/* latest news area */
+.Newes{
+    display: flex;
+    justify-content: space-between;
+
+}
+.section-title{
+  text-align: center;
+  margin:60px 0;
+  font-size:45px;
+}
+
+.news-1,.news-2 .news-banner{
+    margin-right:15px;
+}
+.news-details{
+  text-align: center;
+
+}
+
+
+/* Footer Area */
+#footer-area {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.footer-logo {
+  width: 480px;
+  max-width: 100%;
+  margin: auto;
+  line-height: 0;
+}
+
+.social-icons {
+  margin: 20px 0;
+}
+
+.social-icons a i {
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  border-radius: 50%;
+  color: #969bab;
+  background-color: #e7e7e8;
+  margin: 0 5px;
+  transition: all 0.3s ease-in;
+}
+
+.social-icons a i:hover {
+  background-color: #2061a7;
+  color: #ffffff;
+}
+
+/* Media Query */
+/* For Tablet Device */
+@media (max-width: 991px) {
+  /* Common CSS Responsive */
+  .heading,
+  small-heading {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  /* Banner Area Responsive */
+  .banner-heading {
+    font-size: 36px;
+    line-height: 50px;
+  }
+
+  /* Players and Stats Area Responsive */
+  .players,
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Blog Area Responsive */
+  .blog {
+    flex-direction: column;
+  }
+
+  .blog-thumbnail,
+  .blog-info {
+    width: 100%;
+  }
+
+  .blog-info {
+    margin: 8px 0 14px 0;
+  }
+}
+
+/* For Mobile Device */
+@media (max-width: 767px) {
+  /* Common CSS Responsive */
+  .flex {
+    flex-direction: column;
+  }
+  .half-width {
+    width: 100%;
+    padding: 20px 0;
+  }
+
+  .half-width:first-child {
+    padding-top: 0;
+  }
+
+  .half-width:last-child {
+    padding-bottom: 0;
+  }
+
+  /* Players, Blog and Stats Area Responsive */
+  .players,
+  .blogs,
+  .stats,.Newes{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  
+  /* Footer Area Responsive */
+  .footer-logo {
+    width: 270px;
+  }
+
+  /* Sections Padding Responsive */
+  #banner-area {
+    padding: 90px 0 60px 0;
+  }
+
+  #players-area {
+    padding: 45px 0;
+  }
+
+  #highlights-area {
+    padding: 15px 0 45px 0;
+  }
+
+  #stats-area {
+    padding: 50px 0 60px 0;
+  }
+}
